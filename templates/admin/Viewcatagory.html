@@ -1,0 +1,32 @@
+{% extends 'admin/layout.html' %}
+{% block content %}
+<div class="col-lg-6">
+                <div class="block margin-bottom-sm">
+                  <div class="title"><strong>Viewcatagory Table</strong></div>
+                  <div class="table-responsive"> 
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>catagory Name</th>
+                          <th>description</th>
+                          <th>action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% set count = 1 %}
+                        {% for j in area %}
+                        {% set count = loop.index %}
+                        <tr>
+                          <th scope="row">{{count}}</th>
+                          <td>{{j[1]}}</td>
+                          <td>{{j[2]}}</td>
+                          <td>{{j[3]}}</td>
+                          
+                          <td><a href="{{ url_for('deletecategory',category_id=j[0])}}" class="btn btn-danger" >Delete</a></td>
+
+                        </tr>
+                        {% endfor%}
+                      </tbody>
+                    </table>
+        {% endblock %}

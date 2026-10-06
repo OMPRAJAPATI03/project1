@@ -1,0 +1,43 @@
+{% extends 'admin/layout.html' %}
+{% block content %}
+
+<div class="container mt-5">
+    <div class="block margin-bottom-sm">
+    <div class="title"><strong>vieworder <table></table></strong></div>
+
+    <div class="table-responsive"> 
+        <table class="table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                
+                <th>Order Number</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+             {% set count = 1 %}
+            {% for j in area %}
+            {% set count = loop.index %}
+            <tr>
+                <th scope="row">{{count}}</th>
+                <td>{{ j[1] }}</td>  <!-- order_number -->
+                <td>{{ j[8] }}</td>  <!-- name -->
+                <td>{{ j[6] }}</td>  <!-- date -->
+                <td>{{ j[5] }}</td>  <!-- status -->
+                
+                <td>
+                    <a href="/admin/vieworder/{{ j[0] }}" class="btn btn-primary btn-sm">View</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,319 @@
+{% extends 'user/userlayout.html' %}
+{% block content %}
+
+    <!--End Header-->
+    <!--Mobile Menu-->
+    <div class="mobile-nav-wrapper" role="navigation">
+		<div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
+        
+        	<li class="lvl1 parent megamenu"><a href="#">Shop <i class="anm anm-plus-l"></i></a>
+          <ul>
+            <li><a href="#" class="site-nav">Shop Pages<i class="anm anm-plus-l"></i></a>
+              <ul>
+                <li><a href="shop-left-sidebar.html" class="site-nav">Left Sidebar</a></li>
+                <li><a href="shop-right-sidebar.html" class="site-nav">Right Sidebar</a></li>
+                <li><a href="shop-fullwidth.html" class="site-nav">Fullwidth</a></li>
+                <li><a href="shop-grid-3.html" class="site-nav">3 items per row</a></li>
+                <li><a href="shop-grid-4.html" class="site-nav">4 items per row</a></li>
+                <li><a href="shop-grid-5.html" class="site-nav">5 items per row</a></li>
+                <li><a href="shop-grid-6.html" class="site-nav">6 items per row</a></li>
+                <li><a href="shop-grid-7.html" class="site-nav">7 items per row</a></li>
+                <li><a href="shop-listview.html" class="site-nav last">Product Listview</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="site-nav">Shop Features<i class="anm anm-plus-l"></i></a>
+              <ul>
+                <li><a href="shop-left-sidebar.html" class="site-nav">Product Countdown </a></li>
+                <li><a href="shop-right-sidebar.html" class="site-nav">Infinite Scrolling</a></li>
+                <li><a href="shop-grid-3.html" class="site-nav">Pagination - Classic</a></li>
+                <li><a href="shop-grid-6.html" class="site-nav">Pagination - Load More</a></li>
+                <li><a href="product-labels.html" class="site-nav">Dynamic Product Labels</a></li>
+                <li><a href="product-swatches-style.html" class="site-nav">Product Swatches </a></li>
+                <li><a href="product-hover-info.html" class="site-nav">Product Hover Info</a></li>
+                <li><a href="shop-grid-3.html" class="site-nav">Product Reviews</a></li>
+                <li><a href="shop-left-sidebar.html" class="site-nav last">Discount Label </a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        	
+         
+        </li>
+        	<li class="lvl1 parent megamenu"><a href="about-us.html">Pages <i class="anm anm-plus-l"></i></a>
+          <ul>
+          	<li><a href="cart-variant1.html" class="site-nav">Cart Page <i class="anm anm-plus-l"></i></a>
+                <ul class="dropdown">
+                    <li><a href="cart-variant1.html" class="site-nav">Cart Variant1</a></li>
+                    <li><a href="cart-variant2.html" class="site-nav">Cart Variant2</a></li>
+                 </ul>
+            </li>
+            <li><a href="compare-variant1.html" class="site-nav">Compare Product <i class="anm anm-plus-l"></i></a>
+                <ul class="dropdown">
+                    <li><a href="compare-variant1.html" class="site-nav">Compare Variant1</a></li>
+                    <li><a href="compare-variant2.html" class="site-nav">Compare Variant2</a></li>
+                 </ul>
+            </li>
+			<li><a href="checkout.html" class="site-nav">Checkout</a></li>
+            <li><a href="checkout.html" class="site-nav">Checkout</a></li>
+            <li><a href="about-us.html" class="site-nav">About Us<span class="lbl nm_label1">New</span></a></li>
+            <li><a href="contact-us.html" class="site-nav">Contact Us</a></li>
+            <li><a href="faqs.html" class="site-nav">FAQs</a></li>
+            <li><a href="lookbook1.html" class="site-nav">Lookbook<i class="anm anm-plus-l"></i></a>
+              <ul>
+                <li><a href="lookbook1.html" class="site-nav">Style 1</a></li>
+                <li><a href="lookbook2.html" class="site-nav last">Style 2</a></li>
+              </ul>
+            </li>
+            <li><a href="404.html" class="site-nav">404</a></li>
+            <li><a href="coming-soon.html" class="site-nav">Coming soon<span class="lbl nm_label1">New</span></a></li>
+          </ul>
+        <div class="buttonSet text-center">
+            <a href="{{url_for('viewcart')}}" class="btn btn-secondary btn--small">Buy Now!</a>
+        	
+            </div>
+      </ul>
+	</div>
+	<!--End Mobile Menu-->
+    
+    <!--Body Content-->
+    <div id="page-content">
+    	<!--Home slider-->
+    	<div class="slideshow slideshow-wrapper pb-section sliderFull">
+        	<div class="home-slideshow">
+            	<div class="slide">
+                	<div class="blur-up lazyload bg-size">
+                        <img class="blur-up lazyload bg-img" data-src="/static/user/assets/images/slideshow-banners/jewellers.jpg" src="/static/user/assets/images/slideshow-banners/jewellers.jpg" alt="Shop Our New Collection" title="Shop Our New Collection" />
+                        <div class="slideshow__text-wrap slideshow__overlay classic bottom">
+                            <div class="slideshow__text-content bottom">
+                                <div class="wrap-caption center">
+                                        <h2 class="h1 mega-title slideshow__title">Shop Our New Collection</h2>
+                                        <span class="mega-subtitle slideshow__subtitle">BE YOUR OWN LUXURY</span>
+                                        <a  href="{{url_for('userviewproduct1')}}"><span class="btn">Shop now</span></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                	<div class="blur-up lazyload bg-size">
+                        <img class="blur-up lazyload bg-img" data-src="/static/user/assets/images/slideshow-banners/jewellers2.jpg" src="/static/user/assets/images/slideshow-banners/jewellers2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
+                        <div class="slideshow__text-wrap slideshow__overlay classic bottom">
+                            <div class="slideshow__text-content bottom">
+                                <div class="wrap-caption center">
+                                    <h2 class="h1 mega-title slideshow__title">MADE FOR YOUR MOMENTS</h2>
+                                    <span class="mega-subtitle slideshow__subtitle"></span>
+                                    <a  href="{{url_for('userviewproduct1')}}"><span class="btn">Shop now</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Home slider-->
+        
+        
+        <div class="tab-slider-product section">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="section-header text-center">
+                            <h2 class="h2">New Arrivals</h2>
+                            <p>Browse the huge variety of our products</p>
+                        </div>
+                          
+                        <div class="tabs-listing">
+                            
+                            <div class="tab_container">
+                                <div id="tab1" class="tab_content grid-products">
+                                    <div class="productSlider">
+                                        {% for j in area %}
+                                        <div class="col-12 item">
+                                            <!-- start product image -->
+                                            <div class="product-image">
+                                                <!-- start product image -->
+                                                <a href="{{ url_for('productdetails',product_id=j[0])}}">
+                                                    <!-- image -->
+                                                    <img class="primary blur-up lazyload" data-src="{{j[6]}}"  alt="image" title="product" style="width:200px; height:200px;">
+                                                    <!-- End image -->
+                                                    <!-- Hover image -->
+                                                    <img class="hover blur-up lazyload" data-src="{{j[6]}}"  alt="image" title="product">
+                                                    <!-- End hover image -->
+                                                </a>
+                                                <!-- end product image -->
+                                                
+                                                <!-- countdown start -->
+                                        		
+                                        		<!-- countdown end -->
+        
+                                                <!-- Start product button -->
+                                                <form class="variants add" action="#" onclick="window.location.href='cart.html'"method="post">
+                                            <div class="product-form__item--submit">
+                                                <button type="button" name="add" class="btn product-form__cart-submit">
+                                                    
+                                                    <span><a href="{{ url_for('addcart',product_id=j[0])}}" class="btn btn-primary">ADD TO CART</a></span>
+                                                </button>
+                                            </div>
+                                                </form>
+                                                <div class="button-set">
+                                                    <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+                                                        <i class="icon anm anm-search-plus-r"></i>
+                                                    </a>
+                                                    <div class="wishlist-btn">
+                                                        <a class="wishlist add-to-wishlist" href="wishlist.html">
+                                                            <i class="icon anm anm-heart-l"></i>
+                                                        </a>
+                                                    </div>
+                                                    <div class="compare-btn">
+                                                        <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                                            <i class="icon anm anm-random-r"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <!-- end product button -->
+                                            </div>
+                                            <!-- end product image -->
+                                            <!--start product details -->
+                                            <div class="product-details text-center">
+                                                <!-- product name -->
+                                                <div class="product-name">
+                                                    <a href="short-description.html">{{j[2]}}</a>
+                                                </div>
+                                                <!-- End product name -->
+                                                <!-- product price -->
+                                                <div class="product-price">
+                                                    <span class="price">{{j[5]}}</span>
+                                                </div>
+                                                <!-- End product price -->
+                                                
+                                                <div class="product-review">
+                                                    <i class="font-13 fa fa-star"></i>
+                                                    <i class="font-13 fa fa-star"></i>
+                                                    <i class="font-13 fa fa-star"></i>
+                                                    <i class="font-13 fa fa-star-o"></i>
+                                                    <i class="font-13 fa fa-star-o"></i>
+                                                </div>
+                                                <!-- Variant -->
+                                                
+                                                <!-- End Variant -->
+                                            </div>
+                                            <!-- End product details -->
+                                        </div>
+                                        
+                                            
+                                            
+                                          {% endfor %}      
+                                    </div>
+                                </div>
+                            </div> 
+                        </div> 
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+        <!--Collection Tab slider-->
+        
+        <!--Collection Box slider-->
+        
+        <!--End Collection Box slider-->
+        
+        
+        <!--End Logo Slider-->
+        
+        <!--Featured Product-->
+        <!--End Featured Product-->
+        
+        <!--Latest Blog-->
+        <div class="latest-blog section pt-0">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+        				<div class="section-header text-center">
+      						<h2 class="h2">Latest From our Blog</h2>
+					    </div>
+            		</div>
+                </div>
+            	<div class="row">
+                	<div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    	<div class="wrap-blog">
+                        	<a href="blog-left-sidebar.html" class="article__grid-image">
+              					<img src="\static\user\assets\images\low1.png" alt="It's all about how you wear" title="It's all about how you wear" class="blur-up lazyloaded" style="width:200px; height:auto;"/>
+				            </a>
+                            <div class="article__grid-meta article__grid-meta--has-image">
+                                <div class="wrap-blog-inner">
+                                    <h2 class="h3 article__title">
+                                      <a href="blog-left-sidebar.html">It's all about how you wear</a>
+                                    </h2>
+                                    <span class="article__date">May 02, 2017</span>
+                                    <div class="rte article__grid-excerpt">
+                                        I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account...
+                                    </div>
+                                    <ul class="list--inline article__meta-buttons">
+                                    	<li><a href="blog-article.html">Read more</a></li>
+                                    </ul>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    	<div class="wrap-blog">
+                        	<a href="blog-left-sidebar.html" class="article__grid-image">
+              					<img src="\static\user\assets\images\low2.png" alt="27 Days of Spring Fashion Recap" title="27 Days of Spring Fashion Recap" class="blur-up lazyloaded" style="width:200px; height:auto;"/>
+				            </a>
+                            <div class="article__grid-meta article__grid-meta--has-image">
+                                <div class="wrap-blog-inner">
+                                    <h2 class="h3 article__title">
+                                      <a href="blog-right-sidebar.html">27 Days of Spring Fashion Recap</a>
+                                    </h2>
+                                    <span class="article__date">May 02, 2017</span>
+                                    <div class="rte article__grid-excerpt">
+                                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab...
+                                    </div>
+                                    <ul class="list--inline article__meta-buttons">
+                                    	<li><a href="blog-article.html">Read more</a></li>
+                                    </ul>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Latest Blog-->
+        
+        <!--Store Feature-->
+        <div class="store-feature section">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    	<ul class="display-table store-info">
+                        	<li class="display-table-cell">
+                            	<i class="icon anm anm-truck-l"></i>
+                            	<h5>Free Shipping &amp; Return</h5>
+                            	<span class="sub-text">Free shipping on all US orders</span>
+                            </li>
+                          	<li class="display-table-cell">
+                            	<i class="icon fa fa-inr"></i>
+                                <h5>Money Guarantee</h5>
+                                <span class="sub-text">7 days money back guarantee</span>
+                          	</li>
+                          	<li class="display-table-cell">
+                            	<i class="icon anm anm-comments-l"></i>
+                                <h5>Online Support</h5>
+                                <span class="sub-text">We support online 24/7 on day</span>
+                            </li>
+                          	<li class="display-table-cell">
+                            	<i class="icon anm anm-credit-card-front-r"></i>
+                                <h5>Secure Payments</h5>
+                                <span class="sub-text">All payment are Secured and trusted.</span>
+                        	</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Store Feature-->
+    </div>
+    
+        {% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'admin/layout.html' %}
+{% block content %}
+<div class="col-lg-6">
+                <div class="block">
+<div class="title"><strong class="d-block">Add catagory form</strong><span class="d-block"></span></div>
+                  <div class="block-body">
+                    <form method="post" action="{{url_for('catagory_insert')}}">
+                      <div class="form-group">
+                        <label class="form-control-label">Catagory Name</label>
+                        <input type="text" placeholder="enter name" class="form-control" name="category_name">
+                      </div>
+                      <div class="form-group">       
+                        <label class="form-control-label">Catagory description</label>
+                        <input type="text" placeholder="enter description" class="form-control" name="description">
+                      </div>
+                      <div class="form-group">       
+                        <input type="submit" value="Signin" class="btn btn-primary">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'admin/layout.html' %}
+{% block content %}
+<div class="col-lg-10">
+                <div class="block margin-bottom-sm">
+                  <div class="title"><strong>Viewproduct Table</strong></div>
+                  <div class="table-responsive"> 
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>catagory Name</th>
+                          <th>product Name</th>
+                          <th>description</th>
+                          <th>weight</th>
+                          <th>price</th>
+                          <th>image</th>
+                          <th>action</th>
+
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% set count = 1 %}
+                        {% for j in area %}
+                        {% set count = loop.index %}
+                        <tr>
+                          <th scope="row">{{count}}</th>
+                          <td>{{j[1]}}</td>
+                          <td>{{j[2]}}</td>
+                          <td>{{j[3]}}</td>
+                          <td>{{j[4]}}</td>
+                          <td>{{j[5]}}</td>
+                          <td><img src="/{{j[6]}}" height="90px"></td>
+                          
+                          <td><a class="btn btn-danger" href="{{url_for('delete_product',product_id=j[0])}}">delete</a></td>
+                        </tr>
+                        {% endfor%}
+                      </tbody>
+                    </table>
+        {% endblock %}
+        
